@@ -15,6 +15,7 @@ public class ReporteArticulo {
 
     @ManyToOne
     @JoinColumn(name = "id_estancia")
+    @Column(nullable = false)
     private Estancia estancia;
 
     @Column(nullable = false)

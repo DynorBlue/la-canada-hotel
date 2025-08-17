@@ -15,10 +15,13 @@ public class Estancia {
 
     @ManyToOne
     @JoinColumn(name = "id_habitacion")
+    //hacer los atributos  no nulos
+    @Column(nullable = false)
     private Habitacion habitacion;
 
     @ManyToOne
     @JoinColumn(name = "id_huesped")
+    @Column(nullable = false)
     private Huesped huesped;
 
     @Column(nullable = false)

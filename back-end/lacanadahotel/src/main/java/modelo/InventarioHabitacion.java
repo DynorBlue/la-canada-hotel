@@ -12,6 +12,7 @@ public class InventarioHabitacion {
 
     @ManyToOne
     @JoinColumn(name = "id_estancia")
+    @Column(nullable = false)
     private Estancia estancia;
 
     private boolean control_AC;

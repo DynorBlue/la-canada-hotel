@@ -15,6 +15,7 @@ public class Servicio {
 
     @ManyToOne
     @JoinColumn(name = "id_estancia")
+    @Column(nullable = false)
     private Estancia estancia;
 
     @Column(nullable = false)
@@ -29,10 +30,8 @@ public class Servicio {
     @Column(nullable = false)
     private String estado_pago;
 
-    @Column(nullable = false)
     private LocalDateTime fecha_pago;
 
-    @Column(nullable = false)
     private String forma_pago;
 
     //constructor vacio
