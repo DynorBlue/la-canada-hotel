@@ -18,10 +18,10 @@ public class ReporteArticulo {
     @Column(nullable = false)
     private Estancia estancia;
 
-    @Column(nullable = false)
+    @Column(nullable = false, length = 100)
     private String articulo;
 
-    @Column(nullable = false)
+    @Column(nullable = false, length = 50)
     private String estado;
 
     @Column(nullable = false)

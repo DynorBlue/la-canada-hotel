@@ -15,7 +15,6 @@ public class Estancia {
 
     @ManyToOne
     @JoinColumn(name = "id_habitacion")
-    //hacer los atributos  no nulos
     @Column(nullable = false)
     private Habitacion habitacion;
 

@@ -18,7 +18,7 @@ public class Servicio {
     @Column(nullable = false)
     private Estancia estancia;
 
-    @Column(nullable = false)
+    @Column(nullable = false, length = 100)
     private String nombre_servicio;
 
     @Column(nullable = false)
@@ -27,11 +27,12 @@ public class Servicio {
     @Column(nullable = false)
     private LocalDateTime fecha_solicitud;
 
-    @Column(nullable = false)
+    @Column(nullable = false, length = 50)
     private String estado_pago;
 
     private LocalDateTime fecha_pago;
 
+    @Column(length = 50)
     private String forma_pago;
 
     //constructor vacio

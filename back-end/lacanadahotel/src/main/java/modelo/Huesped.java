@@ -2,6 +2,7 @@ package modelo;
 
 
 import jakarta.persistence.*;
+import org.hibernate.validator.constraints.Length;
 
 @Entity
 @Table(name = "Huesped")
@@ -11,38 +12,40 @@ public class Huesped {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id_huesped;
 
-    @Column(nullable = false)
+    @Column(nullable = false,length = 50)
     private String nombre;
 
-    @Column(nullable = false)
+    @Column(nullable = false, length = 30)
     private String apellido_paterno;
 
-
+    @Column(length = 30)
     private String apellido_materno;
 
+    @Column(length = 100)
     private String correo_electronico;
 
+    @Column(length = 20)
     private String telefono;
 
-    @Column(nullable = false)
+    @Column(nullable = false, length = 100)
     private String ciudad;
 
-    @Column(nullable = false)
+    @Column(nullable = false, length = 100)
     private String pais;
 
-    @Column(nullable = false)
+    @Column(nullable = false, length = 100)
     private String colonia;
 
-    @Column(nullable = false)
+    @Column(nullable = false, length = 100)
     private String calle;
 
-    @Column(nullable = false)
+    @Column(nullable = false, length = 10)
     private String numExt;
 
-
+    @Column(length = 10)
     private String numInt;
 
-    //coonstructor vacio
+    //constructor vacio
 
     public Huesped() {
     }

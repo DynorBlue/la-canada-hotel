@@ -12,13 +12,16 @@ public class Administrador {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id_administrador;
 
-
+    @Column(nullable = false)
     private String usuario;
 
+    @Column(nullable = false)
     private String nombre_completo;
 
+    @Column(nullable = false)
     private String password_hash;
 
+    @Column(nullable = false)
     private String password_salt;
 
     private LocalDate fecha_creacion;
