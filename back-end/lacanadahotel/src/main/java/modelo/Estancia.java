@@ -14,13 +14,11 @@ public class Estancia {
     private int id_estancia;
 
     @ManyToOne
-    @JoinColumn(name = "id_habitacion")
-    @Column(nullable = false)
+    @JoinColumn(name = "id_habitacion", nullable = false)
     private Habitacion habitacion;
 
     @ManyToOne
-    @JoinColumn(name = "id_huesped")
-    @Column(nullable = false)
+    @JoinColumn(name = "id_huesped", nullable = false)
     private Huesped huesped;
 
     @Column(nullable = false)

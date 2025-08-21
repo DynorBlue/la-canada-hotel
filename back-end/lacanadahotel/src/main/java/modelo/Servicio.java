@@ -14,8 +14,7 @@ public class Servicio {
     private int id_servicio;
 
     @ManyToOne
-    @JoinColumn(name = "id_estancia")
-    @Column(nullable = false)
+    @JoinColumn(name = "id_estancia", nullable = false)
     private Estancia estancia;
 
     @Column(nullable = false, length = 100)
